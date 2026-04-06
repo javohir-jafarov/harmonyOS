@@ -33,7 +33,7 @@ img {
     width: 83%;
     margin-inline: auto;
     height: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 header .container .nav {
@@ -172,7 +172,7 @@ main .marketing .container .nav .text a {
 }
 
 main .marketing .container .nav .image {
-    width: 436px;
+    min-width: 436px;
     height: 436px;
 
 
@@ -184,6 +184,19 @@ main .marketing .container .nav .image {
 
 header .container .nav #menu {
     display: none;
+}
+
+@media  screen and (max-width: 1024px) {
+    main .marketing .container .nav .text h1{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    main .marketing .container .nav .image {
+    min-width: 336px;
+    height: 336px;
+
+
+}
 }
 
 @media screen and (max-width: 790px) {
@@ -219,4 +232,34 @@ header .container .nav #menu {
     main .home .container .nav .links {
         font-size: 12px;
     }
+
+    main .marketing .container .nav .image {
+    min-width: 236px;
+    height: 236px;
+
+
+}
+
+main .marketing .container .nav .text h1{
+    font-size: 18px;
+    line-height: 24px
+}
+main .marketing .container .nav .text p{
+    font-size: 12px;
+    line-height: 16px
+}
+    
+}
+
+
+
+@media screen and (max-width: 512px) {
+    main .marketing .container .nav .image {
+    min-width: 336px;
+    height: 336px;
+}
+main .marketing .container .nav{
+    flex-direction: column;
+    justify-content: center;
+}
 }
