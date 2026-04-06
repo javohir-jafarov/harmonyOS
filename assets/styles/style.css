@@ -13,6 +13,7 @@ body {
     padding: 0;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 a,
@@ -213,6 +214,8 @@ header .container .nav #menu {
 
     main .home {
         background: #ebeff4;
+        padding-bottom: 50px;
+        height: 70vh;
     }
 
     main .home .container .nav h1 {
@@ -222,6 +225,7 @@ header .container .nav #menu {
 
     main .home .container .nav p {
         font-size: 12px;
+        padding-block: 18px;
     }
 
     main .home .container .nav button {
