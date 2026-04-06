@@ -1,0 +1,222 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700&display=swap);
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+a,
+button,
+select {
+    color: inherit;
+    outline: none;
+    background: none;
+    border: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 83%;
+    margin-inline: auto;
+    height: 100%;
+    border: 1px solid red;
+}
+
+header .container .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+header .container .nav .left {
+    display: flex;
+    gap: 48px;
+}
+
+header .container .nav .left .logo {
+    width: 93px;
+    height: 18px;
+}
+
+header .container .nav .left ul {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+header .container .nav .right {
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+main .home {
+    height: calc(100vh - 60px);
+    background-image: url(../images/home.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+main .home .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+main .home .container .nav {
+    max-width: 500px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+main .home .container .nav h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 88px;
+    letter-spacing: -5px;
+    padding-bottom: 8px;
+}
+
+main .home .container .nav p {
+    font-weight: 400;
+    line-height: 24px;
+    color: #87898F;
+}
+
+main .home .container .nav button {
+    font-family: 'DM Sans', sans-serif;
+    padding: 12px 24px;
+    background: linear-gradient(282.7deg, #000000 8.28%, #383B4A 85.92%);
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    margin-block: 28px;
+
+}
+
+main .home .container .nav .links {
+    display: flex;
+    gap: 16px;
+    text-decoration: underline;
+}
+
+main .marketing {
+    height: 100vh;
+}
+
+
+
+main .marketing .container .nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+main .marketing .container .nav .text {
+    max-width: 570px;
+}
+
+main .marketing .container .nav .text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 40px;
+    line-height: 64px;
+
+}
+
+main .marketing .container .nav .text h1 span {
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-decoration-color: #4781FF;
+}
+
+main .marketing .container .nav .text p {
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    color: #9093A3;
+    padding-block: 28px;
+}
+
+main .marketing .container .nav .text a {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    letter-spacing: 0px;
+    color: #18181A;
+
+}
+
+main .marketing .container .nav .image {
+    width: 436px;
+    height: 436px;
+
+
+}
+
+
+
+/* Responsives */
+
+header .container .nav #menu {
+    display: none;
+}
+
+@media screen and (max-width: 790px) {
+
+    header .container .nav .left ul,
+    header .container .nav .right {
+        display: none;
+    }
+
+    header .container .nav #menu {
+        display: block;
+        font-size: 18px;
+    }
+
+    main .home {
+        background: #ebeff4;
+    }
+
+    main .home .container .nav h1 {
+        font-size: 52px;
+        letter-spacing: -3px;
+    }
+
+    main .home .container .nav p {
+        font-size: 12px;
+    }
+
+    main .home .container .nav button {
+        font-size: 12px;
+        margin-block: 14px;
+    }
+
+    main .home .container .nav .links {
+        font-size: 12px;
+    }
+}
