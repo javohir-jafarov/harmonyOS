@@ -37,6 +37,10 @@ img {
     /* border: 1px solid red; */
 }
 
+header{
+    z-index: 3;
+}
+
 header .container .nav {
     display: flex;
     align-items: center;
@@ -69,6 +73,58 @@ header .container .nav .right {
     display: flex;
     gap: 20px;
 }
+
+#menu i{
+    cursor: pointer;
+    transition: .2s;
+}
+
+.menu_bar{
+    position: absolute;
+    width: 0px;
+    box-shadow: px 0px 10px black;
+    height: 100%;
+    z-index: 2;
+    margin-left: 20px;
+    right: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    transition: .2s;
+}
+.menu_bar .white_board{
+    background-color: #fff;
+}
+.active{
+    width: 200px;
+}
+
+.menu_bar ul{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.menu_bar ul li a{
+    border-top: 1px solid black;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    width: 100%;
+    display: block;
+    padding-block: 15px;
+}
+
+.menu_bar .right{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 24px;
+}
+
+
 
 main .home {
     height: calc(100vh - 60px);
