@@ -236,6 +236,10 @@ main .marketing .container .nav .image {
 }
 
 
+main .support .container .nav{
+    background-image: url(./assets/images/devices.png);
+}
+
 
 /* Responsives */
 
