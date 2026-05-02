@@ -235,9 +235,17 @@ main .marketing .container .nav .image {
 
 }
 
+main .support {
+    border: 1px solid red;
+    background-image: url("../../assets/images/devices.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 main .support .container .nav{
-    background-image: url(./assets/images/devices.png);
+    height: 100vh;
 }
 
 
