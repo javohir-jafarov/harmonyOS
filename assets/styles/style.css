@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
 
-
 @import url(https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700&display=swap);
 
 body {
@@ -37,7 +36,7 @@ img {
     /* border: 1px solid red; */
 }
 
-header{
+header {
     z-index: 3;
 }
 
@@ -74,12 +73,12 @@ header .container .nav .right {
     gap: 20px;
 }
 
-#menu i{
+#menu i {
     cursor: pointer;
     transition: .2s;
 }
 
-.menu_bar{
+.menu_bar {
     position: absolute;
     width: 0px;
     box-shadow: px 0px 10px black;
@@ -93,14 +92,16 @@ header .container .nav .right {
     gap: 40px;
     transition: .2s;
 }
-.menu_bar .white_board{
+
+.menu_bar .white_board {
     background-color: #fff;
 }
-.active{
+
+.active {
     width: 200px;
 }
 
-.menu_bar ul{
+.menu_bar ul {
     display: flex;
     align-items: left;
     flex-direction: column;
@@ -108,7 +109,7 @@ header .container .nav .right {
     padding: 10px;
 }
 
-.menu_bar ul li a{
+.menu_bar ul li a {
     border-top: 1px solid black;
     border-bottom: 1px solid rgb(0, 0, 0);
     width: 100%;
@@ -116,7 +117,7 @@ header .container .nav .right {
     padding-block: 15px;
 }
 
-.menu_bar .right{
+.menu_bar .right {
     padding: 10px;
     display: flex;
     align-items: center;
@@ -243,29 +244,69 @@ main .support {
     background-position: center;
 }
 
+main .support .container {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    
 
-main .support .container .nav{
-    height: 100vh;
 }
 
+main .support .container .nav {
+    height: 100vh;
+    width: 542px;
+    background: linear-gradient(354.14deg, #000000 8.96%, #4A4C5C 93.24%);
+    padding: 77px 100px 77px 48px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
 
+}
+
+main .support .container .nav h1{
+font-weight: 500;
+font-style: Medium;
+font-size: 44px;
+line-height: 64px;
+letter-spacing: -2px;
+color: white;
+border: 1px solid red;
+}
+
+main .support .container .nav h1 span{
+    position: relative;
+}
+main .support .container .nav h1 span::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #4781FF;
+    left: 0;
+    bottom: 10px
+    
+    
+    
+    ;
+
+}
 /* Responsives */
 
 header .container .nav #menu {
     display: none;
 }
 
-@media  screen and (max-width: 1024px) {
-    main .marketing .container .nav .text h1{
+@media screen and (max-width: 1024px) {
+    main .marketing .container .nav .text h1 {
         font-size: 24px;
         line-height: 32px;
     }
+
     main .marketing .container .nav .image {
-    min-width: 336px;
-    height: 336px;
+        min-width: 336px;
+        height: 336px;
 
 
-}
+    }
 }
 
 @media screen and (max-width: 790px) {
@@ -306,32 +347,34 @@ header .container .nav #menu {
     }
 
     main .marketing .container .nav .image {
-    min-width: 236px;
-    height: 236px;
+        min-width: 236px;
+        height: 236px;
 
 
-}
+    }
 
-main .marketing .container .nav .text h1{
-    font-size: 18px;
-    line-height: 24px
-}
-main .marketing .container .nav .text p{
-    font-size: 12px;
-    line-height: 16px
-}
-    
+    main .marketing .container .nav .text h1 {
+        font-size: 18px;
+        line-height: 24px
+    }
+
+    main .marketing .container .nav .text p {
+        font-size: 12px;
+        line-height: 16px
+    }
+
 }
 
 
 
 @media screen and (max-width: 512px) {
     main .marketing .container .nav .image {
-    min-width: 336px;
-    height: 336px;
-}
-main .marketing .container .nav{
-    flex-direction: column;
-    justify-content: center;
-}
+        min-width: 336px;
+        height: 336px;
+    }
+
+    main .marketing .container .nav {
+        flex-direction: column;
+        justify-content: center;
+    }
 }
