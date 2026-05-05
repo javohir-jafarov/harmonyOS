@@ -237,7 +237,6 @@ main .marketing .container .nav .image {
 }
 
 main .support {
-    border: 1px solid red;
     background-image: url("../../assets/images/devices.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -256,6 +255,9 @@ main .support .container .nav {
     height: 100vh;
     width: 542px;
     background: linear-gradient(354.14deg, #000000 8.96%, #4A4C5C 93.24%);
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
     padding: 77px 100px 77px 48px;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
@@ -289,6 +291,24 @@ main .support .container .nav h1 span::after{
     ;
 
 }
+
+main .support .container .nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+     ul li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-weight: 400;
+    border: 1px solid red;
+    font-size: 20px;
+}
+
+
 /* Responsives */
 
 header .container .nav #menu {
@@ -377,4 +397,6 @@ header .container .nav #menu {
         flex-direction: column;
         justify-content: center;
     }
+
+    main .support .container .nav
 }
