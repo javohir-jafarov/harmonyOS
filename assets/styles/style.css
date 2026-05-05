@@ -271,7 +271,6 @@ font-size: 44px;
 line-height: 64px;
 letter-spacing: -2px;
 color: white;
-border: 1px solid red;
 }
 
 main .support .container .nav h1 span{
@@ -284,12 +283,7 @@ main .support .container .nav h1 span::after{
     height: 5px;
     background-color: #4781FF;
     left: 0;
-    bottom: 10px
-    
-    
-    
-    ;
-
+    bottom: 10px;
 }
 
 main .support .container .nav ul{
@@ -304,7 +298,6 @@ main .support .container .nav ul{
     gap: 10px;
     color: #fff;
     font-weight: 400;
-    border: 1px solid red;
     font-size: 20px;
 }
 
@@ -398,5 +391,22 @@ header .container .nav #menu {
         justify-content: center;
     }
 
-    main .support .container .nav
+    main .support .container .nav{
+         padding: 61px 84px 61px 32px;
+         height: fit-content;
+    }
+    main .support .container .nav h1{
+        font-size: 28px;
+line-height: 32px;
+    }
+    main .support .container .nav h1 span::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #4781FF;
+    left: 0;
+    bottom: 5px;
+}
+
 }
