@@ -292,11 +292,11 @@ main .support .container .nav ul{
     gap: 16px;
 }
 
-     ul li{
+main .support .container .nav ul li{
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #fff;
+    color: #ffffff;
     font-weight: 400;
     font-size: 20px;
 }
