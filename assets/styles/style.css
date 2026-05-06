@@ -316,8 +316,28 @@ main .business .container .nav{
     border: 1px solid red;
     height: 100%;
     padding-block: 144px;
+    gap: 96px;
 }
 
+main .business .container .nav h1{
+font-weight: 500;
+font-style: Medium;
+font-size: 44px;
+line-height: 64px;
+
+}
+
+main .business .container .nav .cards{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    border: 1px solid red;
+}
+
+main .business .container .nav .cards .card{
+    border: 1px solid red;
+}
 
 /* Responsives */
 
