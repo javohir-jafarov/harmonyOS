@@ -2,7 +2,7 @@
 
 @import url(https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700&display=swap);
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -251,7 +251,7 @@ main .support .container {
     display: flex;
     justify-content: right;
     width: 100%;
-    
+
 
 }
 
@@ -268,19 +268,20 @@ main .support .container .nav {
 
 }
 
-main .support .container .nav h1{
-font-weight: 500;
-font-style: Medium;
-font-size: 44px;
-line-height: 64px;
-letter-spacing: -2px;
-color: white;
+main .support .container .nav h1 {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 44px;
+    line-height: 64px;
+    letter-spacing: -2px;
+    color: white;
 }
 
-main .support .container .nav h1 span{
+main .support .container .nav h1 span {
     position: relative;
 }
-main .support .container .nav h1 span::after{
+
+main .support .container .nav h1 span::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -290,13 +291,13 @@ main .support .container .nav h1 span::after{
     bottom: 10px;
 }
 
-main .support .container .nav ul{
+main .support .container .nav ul {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-main .support .container .nav ul li{
+main .support .container .nav ul li {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -305,29 +306,31 @@ main .support .container .nav ul li{
     font-size: 20px;
 }
 
-main .business{
+main .business {
     height: 100vh;
 }
 
-main .business .container .nav{
+main .business .container .nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border: 1px solid red;
     height: 100%;
     padding-block: 144px;
     gap: 96px;
 }
 
-main .business .container .nav h1{
-font-weight: 500;
-font-style: Medium;
-font-size: 44px;
-line-height: 64px;
+main .business .container .nav h1 {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 44px;
+    line-height: 64px;
+    border: 1px solid red;
 
 }
 
-main .business .container .nav .cards{
+main .business .container .nav .cards {
     display: flex;
     align-items: center;
     gap: 40px;
@@ -335,8 +338,49 @@ main .business .container .nav .cards{
     border: 1px solid red;
 }
 
-main .business .container .nav .cards .card{
-    border: 1px solid red;
+main .business .container .nav .cards .card {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    border-radius: 16px;
+    border: 3px solid #E5E5E554;
+    height: 477px;
+
+    padding: 52px 42px;
+
+}
+
+main .business .container .nav .cards .card .profile {
+    width: 128px;
+    height: 128px;
+}
+
+main .business .container .nav .cards .card h4 {
+    font-family: DM Sans;
+font-weight: 500;
+font-style: Medium;
+font-size: 24px;
+line-height: 100%;
+color: #18181A;
+
+}
+
+main .business .container .nav .cards .card p {
+    font-family: DM Sans;
+font-weight: 400;
+font-style: Regular;
+line-height: 28px;
+text-align: center;
+}
+
+main .business .container .nav .cards .card button {
+    width: 100%;
+height: 50px;
+opacity: 1;
+border-radius: 10px;
+background: #18181A;
+color: #fff;
 }
 
 /* Responsives */
@@ -428,22 +472,24 @@ header .container .nav #menu {
         justify-content: center;
     }
 
-    main .support .container .nav{
-         padding: 61px 84px 61px 32px;
-         height: fit-content;
+    main .support .container .nav {
+        padding: 61px 84px 61px 32px;
+        height: fit-content;
     }
-    main .support .container .nav h1{
+
+    main .support .container .nav h1 {
         font-size: 28px;
-line-height: 32px;
+        line-height: 32px;
     }
-    main .support .container .nav h1 span::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    background-color: #4781FF;
-    left: 0;
-    bottom: 5px;
-}
+
+    main .support .container .nav h1 span::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: #4781FF;
+        left: 0;
+        bottom: 5px;
+    }
 
 }
