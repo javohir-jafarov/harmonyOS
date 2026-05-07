@@ -77,6 +77,11 @@ header .container .nav .right {
     gap: 20px;
 }
 
+header .container .nav #menu {
+    display: none;
+}
+
+
 #menu i {
     cursor: pointer;
     transition: .2s;
@@ -404,9 +409,6 @@ main .business .container .nav .cards #black button {
 main .business .container .nav .cards #black
 /* Responsives */
 
-header .container .nav #menu {
-    display: none;
-}
 
 @media screen and (max-width: 1200px) {
     main .business .container .nav{
