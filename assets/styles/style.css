@@ -358,30 +358,47 @@ main .business .container .nav .cards .card .profile {
 
 main .business .container .nav .cards .card h4 {
     font-family: DM Sans;
-font-weight: 500;
-font-style: Medium;
-font-size: 24px;
-line-height: 100%;
-color: #18181A;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    color: #18181A;
 
 }
 
 main .business .container .nav .cards .card p {
-    font-family: DM Sans;
-font-weight: 400;
-font-style: Regular;
-line-height: 28px;
-text-align: center;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: #9698A5;
+
 }
 
 main .business .container .nav .cards .card button {
     width: 100%;
-height: 50px;
-opacity: 1;
-border-radius: 10px;
-background: #18181A;
-color: #fff;
+    height: 50px;
+    opacity: 1;
+    border-radius: 10px;
+    background: #18181A;
+    color: #fff;
 }
+
+main .business .container .nav .cards #black{
+    background: linear-gradient(354.14deg, #000000 8.96%, #4A4C5C 93.24%);
+    border: none;
+    
+}
+
+main .business .container .nav .cards #black h4{
+    color: #fff;
+}
+
+main .business .container .nav .cards #black button{
+    background-color: #fff;
+    color: #000;
+}
+
+main .business .container .nav .cards #black
 
 /* Responsives */
 
