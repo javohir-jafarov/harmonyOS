@@ -315,7 +315,6 @@ main .business .container .nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
     height: 100%;
     padding-block: 144px;
     gap: 96px;
@@ -326,7 +325,6 @@ main .business .container .nav h1 {
     font-style: Medium;
     font-size: 44px;
     line-height: 64px;
-    border: 1px solid red;
 
 }
 
@@ -335,7 +333,8 @@ main .business .container .nav .cards {
     align-items: center;
     gap: 40px;
     width: 100%;
-    border: 1px solid red;
+    flex-wrap: no-wrap;
+    justify-content: center;
 }
 
 main .business .container .nav .cards .card {
@@ -346,8 +345,12 @@ main .business .container .nav .cards .card {
     border-radius: 16px;
     border: 3px solid #E5E5E554;
     height: 477px;
-
     padding: 52px 42px;
+    background-color: #fff;
+
+    width: 350px;
+    flex: 1 1 350px;
+    max-width: 350px;
 
 }
 
@@ -357,7 +360,6 @@ main .business .container .nav .cards .card .profile {
 }
 
 main .business .container .nav .cards .card h4 {
-    font-family: DM Sans;
     font-weight: 500;
     font-style: Medium;
     font-size: 24px;
@@ -377,33 +379,48 @@ main .business .container .nav .cards .card p {
 main .business .container .nav .cards .card button {
     width: 100%;
     height: 50px;
+    padding: 12px;
     opacity: 1;
     border-radius: 10px;
     background: #18181A;
     color: #fff;
 }
 
-main .business .container .nav .cards #black{
+main .business .container .nav .cards #black {
     background: linear-gradient(354.14deg, #000000 8.96%, #4A4C5C 93.24%);
     border: none;
-    
+
 }
 
-main .business .container .nav .cards #black h4{
+main .business .container .nav .cards #black h4 {
     color: #fff;
 }
 
-main .business .container .nav .cards #black button{
+main .business .container .nav .cards #black button {
     background-color: #fff;
     color: #000;
 }
 
 main .business .container .nav .cards #black
-
 /* Responsives */
 
 header .container .nav #menu {
     display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    main .business .container .nav{
+        margin-top: 500px;
+    }
+    main .business .container .nav .cards {
+        flex-direction: column;
+
+    }
+
+    main .business .container .nav .cards .card{
+        min-width: 100%;
+        align-items: start;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -419,6 +436,19 @@ header .container .nav #menu {
 
     }
 }
+
+@media (max-width: 992px) {
+  main .business .container .nav .cards {
+    gap: 20px;
+    flex-wrap: no-wrap;
+  }
+
+  main .business .container .nav .cards .card {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+}
+
 
 @media screen and (max-width: 790px) {
 
@@ -474,6 +504,17 @@ header .container .nav #menu {
         line-height: 16px
     }
 
+     main .business .container .nav .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .business .container .nav .cards .card {
+    width: 100%;
+    max-width: 500px;
+    flex: unset;
+  }
+
 }
 
 
@@ -508,5 +549,13 @@ header .container .nav #menu {
         left: 0;
         bottom: 5px;
     }
+
+      main .business .container .nav .cards {
+    gap: 15px;
+  }
+
+  main .business .container .nav .cards .card {
+    max-width: 100%;
+  }
 
 }
