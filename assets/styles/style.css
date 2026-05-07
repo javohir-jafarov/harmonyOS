@@ -517,6 +517,10 @@ main .business .container .nav .cards #black
     flex: unset;
   }
 
+  main .business .container .nav {
+    margin-top: 550px;
+  }
+
 }
 
 
