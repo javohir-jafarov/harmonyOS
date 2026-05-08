@@ -406,20 +406,45 @@ main .business .container .nav .cards #black button {
     color: #000;
 }
 
-main .business .container .nav .cards #black
+main #key .container .nav .cards #black {
+    background: #fff;
+}
+
+main #key .container .nav .cards #black h4 {
+    color: #000;
+}
+
+main #key .container .nav .cards .card button {
+    width: 56px;
+    min-height: 56px;
+    border-radius: 50%;
+    background: #F7F8FA;
+    margin-left: auto;
+    color: #fff;
+
+}
+
+main #key .container .nav .cards .card button {
+
+}
+
+
+
+
 /* Responsives */
 
 
 @media screen and (max-width: 1200px) {
-    main .business .container .nav{
+    main .business .container .nav {
         margin-top: 500px;
     }
+
     main .business .container .nav .cards {
         flex-direction: column;
 
     }
 
-    main .business .container .nav .cards .card{
+    main .business .container .nav .cards .card {
         min-width: 100%;
         align-items: start;
     }
@@ -440,15 +465,15 @@ main .business .container .nav .cards #black
 }
 
 @media (max-width: 992px) {
-  main .business .container .nav .cards {
-    gap: 20px;
-    flex-wrap: no-wrap;
-  }
+    main .business .container .nav .cards {
+        gap: 20px;
+        flex-wrap: no-wrap;
+    }
 
-  main .business .container .nav .cards .card {
-    flex: 1 1 45%;
-    max-width: 45%;
-  }
+    main .business .container .nav .cards .card {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
 }
 
 
@@ -506,20 +531,20 @@ main .business .container .nav .cards #black
         line-height: 16px
     }
 
-     main .business .container .nav .cards {
-    flex-direction: column;
-    align-items: center;
-  }
+    main .business .container .nav .cards {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  main .business .container .nav .cards .card {
-    width: 100%;
-    max-width: 500px;
-    flex: unset;
-  }
+    main .business .container .nav .cards .card {
+        width: 100%;
+        max-width: 500px;
+        flex: unset;
+    }
 
-  main .business .container .nav {
-    margin-top: 550px;
-  }
+    main .business .container .nav {
+        margin-top: 550px;
+    }
 
 }
 
@@ -556,12 +581,12 @@ main .business .container .nav .cards #black
         bottom: 5px;
     }
 
-      main .business .container .nav .cards {
-    gap: 15px;
-  }
+    main .business .container .nav .cards {
+        gap: 15px;
+    }
 
-  main .business .container .nav .cards .card {
-    max-width: 100%;
-  }
+    main .business .container .nav .cards .card {
+        max-width: 100%;
+    }
 
 }
