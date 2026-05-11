@@ -406,12 +406,25 @@ main .business .container .nav .cards #black button {
     color: #000;
 }
 
-main #key .container .nav .cards #black {
-    background: #fff;
+main #key {
+    height: fit-content;
+    min-height: 100vh;
+    background: #F0F0F0;
 }
 
-main #key .container .nav .cards #black h4 {
+main #key .container .nav .cards .card {
+    background: #fff;
+    min-height: 600px;
+    max-height: fit-content;
+}
+
+main #key .container .nav .cards .card h4 {
     color: #000;
+}
+
+
+main #key .container .nav .cards .card p, main #key .container .nav .cards .card h4  {
+    text-align: left;
 }
 
 main #key .container .nav .cards .card button {
@@ -425,8 +438,9 @@ main #key .container .nav .cards .card button {
 
 }
 
-main #key .container .nav .cards .card button {
-
+main #key .container .nav .cards .card .profile {
+    width: 240px;
+    height: 240px;
 }
 
 
@@ -541,10 +555,19 @@ main #key .container .nav .cards .card button {
         width: 100%;
         max-width: 500px;
         flex: unset;
+
     }
 
     main .business .container .nav {
         margin-top: 550px;
+    }
+
+    main #key .container .nav .cards .card {
+        padding-bottom: 500px;
+    }
+
+    main #key .container .nav .cards .card h4 {
+        font-size: 20px;
     }
 
 }
