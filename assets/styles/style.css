@@ -449,18 +449,35 @@ footer .container .nav{
 }
 
 footer .container .nav .lists{
+    border: 1px solid red;
+    display: flex;
+    width: fit-content;
+    gap: 64px;
 
 }
 
 footer .container .nav .lists h4{
-
+font-weight: 500;
+font-style: Medium;
+line-height: 100%;
 }
 
-footer .container .nav .lists ul{
-
+footer .container .nav .lists .list{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
-footer .container .nav .lists ul li{
 
+footer .container .nav .lists .list ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer .container .nav .lists .list ul li{
+font-weight: 400;
+font-size: 14px;
+line-height: 100%;
+color: #9698A5;
 }
 
 
