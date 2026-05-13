@@ -444,7 +444,24 @@ main #key .container .nav .cards .card .profile {
 }
 
 
+footer .container .nav{
+    border: 1px solid red;
+}
 
+footer .container .nav .lists{
+
+}
+
+footer .container .nav .lists h4{
+
+}
+
+footer .container .nav .lists ul{
+
+}
+footer .container .nav .lists ul li{
+
+}
 
 
 /* Responsives */
