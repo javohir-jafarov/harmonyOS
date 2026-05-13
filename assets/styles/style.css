@@ -449,10 +449,11 @@ footer .container .nav{
 }
 
 footer .container .nav .lists{
-    border: 1px solid red;
     display: flex;
     width: fit-content;
     gap: 64px;
+    padding-bottom: 49px;
+    border-bottom: 1px solid #E5E5E57D;
 
 }
 
